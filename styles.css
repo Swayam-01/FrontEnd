@@ -142,7 +142,7 @@ a {
     background-color: #7b1fa2;
 }
 .btn-primary {
-    background-color: #8e24aa;
+    background-color: #5324aa;
     color: #f5f4f8;
     padding: 0.8rem 0.9rem;
     font-size: 0.875rem;
@@ -153,6 +153,19 @@ a {
     transition: background-color 0.3s ease;
     width: fit-content;
 }
+.btnn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #f6eff8;
+    color: #6147b0;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+    width: 12rem;
+}
+
 .btn-primary:hover {
     background-color: #7b1fa2;
 }
@@ -275,19 +288,20 @@ a {
 
 
 .integration-card .hexagon {
-    background-color: #fff;
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    width: 72px;
-    height: 72px;
-    margin: 0 auto 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 .integration-icon-card {
-    width: 64px;
-    height: 64px;
+    width: 82px;
+    height: 82px;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
     background-color: #f3f4f6;
     border-radius: 12px;
     display: flex;
@@ -364,6 +378,7 @@ a {
   height: 55px;
   background-color: #fff;
   margin: 1.5rem auto;
+  border-bottom: #0a0a0a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -386,8 +401,14 @@ a {
   z-index: 2;
 }
 
-
+.divider {
+    width: 100%;
+    height: 1px;               /* or a fixed px value */
+    background: #ccc;
+    /* margin: 0 16px;            space around the line */
+  }
 .integration-info h3 {
+    border-top: #0a0a0a;
   margin: 0.5rem 0 0.3rem;
   font-size: 1rem;
 }
