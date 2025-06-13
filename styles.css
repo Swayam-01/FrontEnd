@@ -288,7 +288,7 @@ a {
 
 .integration-card .hexagon {
   background-color: #fff;
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  /* clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); */
   width: 72px;
   height: 72px;
   margin: 0 auto 1rem;
@@ -298,8 +298,9 @@ a {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 .integration-icon-card {
-    width: 64px;
-    height: 64px;
+    width: 82px;
+    height: 82px;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
     background-color: #f3f4f6;
     border-radius: 12px;
     display: flex;
