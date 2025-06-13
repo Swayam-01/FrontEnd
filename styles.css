@@ -142,7 +142,7 @@ a {
     background-color: #7b1fa2;
 }
 .btn-primary {
-    background-color: #8e24aa;
+    background-color: #5324aa;
     color: #f5f4f8;
     padding: 0.8rem 0.9rem;
     font-size: 0.875rem;
@@ -153,6 +153,19 @@ a {
     transition: background-color 0.3s ease;
     width: fit-content;
 }
+.btnn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #f6eff8;
+    color: #6147b0;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+    width: 12rem;
+}
+
 .btn-primary:hover {
     background-color: #7b1fa2;
 }
