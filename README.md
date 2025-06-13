@@ -20,6 +20,4 @@ This landing page demonstrates the power of **Telecrm** integrations by visually
 - HTML5
 - CSS3 (Custom styling, Flexbox, and Grid)
 - Google Fonts (Roboto Flex)
-
-## 📁 Folder Structure
-
+- JavaScript ES6
