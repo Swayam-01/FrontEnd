@@ -121,12 +121,12 @@ a {
     margin: 0 auto;
     animation: floatImage 3.5s ease-in-out infinite;
 }
-@keyframes floatImage {               /* Use for Float animation in hero image*/
+@keyframes floatImage {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
 }
-.btn-hero-primary {       /*Primary Button*/
+.btn-hero-primary {
     display: inline-block;
     padding: 12px 24px;
     background: white;
@@ -212,7 +212,7 @@ a {
 .showcase-item.reverse .showcase-visual {
     grid-area: visual;
 }
-.showcase-subtitle {   /*Sub Sections*/
+.showcase-subtitle {
     font-size: 1.125rem;
     font-weight: 600;
     color: #0a0a0a;
@@ -264,31 +264,32 @@ a {
     line-height: 1.7;
 }
 .grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin-bottom: 3rem;
-    justify-content: center;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
+
 .integration-card {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e5e7eb;
-    transition: box-shadow 0.3s;
+  background: #f9f9f9;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
 }
 
 .integration-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9ff;
+  transform: translateY(-5px);
 }
+
 
 .integration-card .hexagon {
   background-color: #fff;
-  /* clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); */
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   width: 72px;
   height: 72px;
   margin: 0 auto 1rem;
@@ -307,11 +308,10 @@ a {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1rem;
-    font-size: 28px; 
-    color: #382479;  
+    font-size: 28px;
+    color: #382479;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
-
 .integration-name {
     font-weight: 600;
     color: #111827;
@@ -322,10 +322,100 @@ a {
     color: #6b7280;
     line-height: 1.5;
 }
+
+.integration-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.hexagon-container {
+  position: relative;
+  width: 100px;
+  height: 115px;
+  margin-bottom: 1rem;
+}
+
+.hexagon-bg {
+  position: absolute;
+  width: 100px;
+  height: 55px;
+  background: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: rotate(0deg) skewY(-30deg);
+  top: 30px;
+  left: 0;
+  z-index: 0;
+}
+
+.hexagon-bg::before,
+.hexagon-bg::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 55px;
+  background: inherit;
+  left: 0;
+  box-shadow: inherit;
+}
+
+.hexagon-bg::before {
+  top: -55px;
+  transform: rotate(0deg) skewY(30deg);
+}
+
+.hexagon-bg::after {
+  top: 55px;
+  transform: rotate(0deg) skewY(30deg);
+}
+.hexagon {
+  position: relative;
+  width: 100px;
+  height: 55px;
+  background-color: #fff;
+  margin: 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Hexagon shape */
+  clip-path: polygon(
+    25% 0%, 75% 0%,
+    100% 50%, 75% 100%,
+    25% 100%, 0% 50%
+  );
+
+  /* Elevation */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.hexagon img {
+  max-width: 50%;
+  height: auto;
+  z-index: 2;
+}
+
+
+.integration-info h3 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1rem;
+}
+
+.integration-info p {
+  font-size: 0.875rem;
+  color: #555;
+}
+
 .grid-footer {
     text-align: center;
 }
 
+/* Responsive Queries */
 @media (max-width: 1024px) {
     .hero-container,
     .showcase-container {
