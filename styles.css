@@ -113,8 +113,14 @@ a {
 }
 /* Showcase Section */
 .showcase {
+<<<<<<< HEAD
   padding: 5rem 1rem 2rem;
   background: #f8f8f8;
+=======
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    background: #f8f8f8;
+>>>>>>> b167b77 (Padding new refine)
 }
 
 .section-centered-title {
