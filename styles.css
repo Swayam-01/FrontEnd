@@ -45,7 +45,7 @@ a {
 }
 .hero-subheading {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 500;
     color: #fbfbfb;
     max-width: 90%;
     margin-bottom: 20px;
@@ -93,8 +93,10 @@ a {
     background-color: #f6eff8;
     color: #6147b0;
     font-weight: 600;
+    font-weight: 600;
     font-size: 0.9rem;
     border: none;
+    border-radius: 0.2rem;
     border-radius: 0.2rem;
     cursor: pointer;
     text-align: center;
@@ -113,17 +115,96 @@ a {
 }
 /* Showcase Section */
 .showcase {
-<<<<<<< HEAD
   padding: 5rem 1rem 2rem;
   background: #f8f8f8;
-=======
-    padding-top: 5rem;
-    padding-bottom: 1rem;
-    background: #f8f8f8;
->>>>>>> b167b77 (Padding new refine)
 }
 
+
 .section-centered-title {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.section-centered-title h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0;
+}
+
+/* Showcase Item Layout */
+.showcase-item {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+}
+
+.showcase-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.showcase-item.reverse .showcase-container {
+  direction: rtl;
+}
+
+.showcase-item.reverse .showcase-text {
+  direction: ltr;
+}
+
+/* Typography */
+.showcase-subtitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #0a0a0a;
+  margin-bottom: 0.5rem;
+}
+
+.showcase-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.showcase-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Image Styling */
+.showcase-visual img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive Queries */
+@media (max-width: 1024px) {
+  .showcase-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .showcase-item.reverse .showcase-container {
+    direction: ltr;
+  }
+
+  .showcase-visual img {
+    margin-top: 2rem;
+  }
+
+  .showcase-subtitle,
+  .showcase-title,
+  .showcase-description {
   max-width: 1200px;
   margin: 0 auto 3rem;
   padding: 0 1rem;
@@ -224,7 +305,26 @@ a {
   text-align: center;
 }
 
+  }
+}
+/* Showcase Section */
+.showcase {
+  padding: 5rem 1rem 2rem;
+  background: #f8f8f8;
+}
+
+.section-centered-title {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
 .section-centered-title h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0;
   font-size: 2.25rem;
   font-weight: 700;
   color: #111827;
@@ -232,26 +332,42 @@ a {
 }
 
 /* Showcase Item Layout */
+
+/* Showcase Item Layout */
 .showcase-item {
   max-width: 1200px;
   margin: 0 auto 4rem;
   padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
 }
+
 
 .showcase-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
 }
+
 
 .showcase-item.reverse .showcase-container {
   direction: rtl;
+  direction: rtl;
 }
+
 
 .showcase-item.reverse .showcase-text {
   direction: ltr;
+  direction: ltr;
 }
+
+/* Typography */
 
 /* Typography */
 .showcase-subtitle {
@@ -259,16 +375,30 @@ a {
   font-weight: 600;
   color: #0a0a0a;
   margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #0a0a0a;
+  margin-bottom: 0.5rem;
 }
+
 
 .showcase-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #111827;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #111827;
 }
 
+
 .showcase-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 2rem;
   font-size: 1.125rem;
   color: #6b7280;
   line-height: 1.7;
@@ -276,7 +406,38 @@ a {
 }
 
 /* Image Styling */
+
+/* Image Styling */
 .showcase-visual img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive Queries */
+@media (max-width: 1024px) {
+  .showcase-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .showcase-item.reverse .showcase-container {
+    direction: ltr;
+  }
+
+  .showcase-visual img {
+    margin-top: 2rem;
+  }
+
+  .showcase-subtitle,
+  .showcase-title,
+  .showcase-description {
+    text-align: center;
+  }
+}
+
   width: 100%;
   max-width: 500px;
   border-radius: 0.5rem;
