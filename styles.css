@@ -38,13 +38,13 @@ a {
     gap: 2.5rem;
 }
 .hero-heading {
-    font-size: 2.75rem;
+    font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 16px;
 }
 .hero-subheading {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     color: #fbfbfb;
     max-width: 90%;
@@ -103,8 +103,9 @@ a {
     width: 12rem;
 }
 .btnn-primary:hover {
-    background-color: #7b1fa2;
-    color: #ffffff;
+    /* background-color: #7b1fa2;
+    color: #ffffff; */
+    border: rgb(37, 110, 255) 3px solid;
 }
 .btn-primary:hover {
     background-color: #7b1fa2;
@@ -115,8 +116,8 @@ a {
 }
 /* Showcase Section */
 .showcase {
-  padding: 5rem 1rem 2rem;
-  background: #f8f8f8;
+  padding: 5rem 0rem 2rem;
+  background: #ffffff;
 }
 
 
@@ -508,7 +509,8 @@ a {
 
 .integration-card {
   background: #f9f9f9;
-  padding: 1.5rem 1rem;
+  height: 100%;
+  /* padding: 1.5rem 1rem; */
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
@@ -518,13 +520,13 @@ a {
 .integration-card .hexagon {
   background-color: #fff;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-  width: 72px;
-  height: 72px;
+  width: 111px;
+  height: 111px;
   margin: 0 auto 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px black;
 }
 .integration-icon-card {
     width: 82px;
@@ -558,7 +560,8 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding-top: 1rem;
+  /* padding: 1rem; */
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   background: #f9f9f9;
@@ -650,15 +653,21 @@ a {
     background: #ccc;      
   }
 
+.integration-info {
+  padding: 0.8rem;
+}
+
 .integration-info h3 {
   border-top: #0a0a0a;
   margin: 0.5rem 0 0.3rem;
   font-size: 1rem;
+  text-align: left;
 }
 
 .integration-info p {
   font-size: 0.875rem;
   color: #555;
+  text-align: left;
 }
 
 .grid-footer {
