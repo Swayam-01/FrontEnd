@@ -258,6 +258,8 @@ a {
 }
 
 .integration-card {
+  aspect-ratio: auto; /* Or specify another ratio, e.g., 16/9 */
+  
   background: #fff;
   height: 100%;
   /* padding: 1.5rem 1rem; */
@@ -268,8 +270,8 @@ a {
 }
 
 .hexagon-wrapper {
-  width: 111px;
-  height: 111px;
+  /* width: 111px;
+  height: 111px; */
   margin: 0 auto 1rem;
 
   /* Apply drop shadow here */
@@ -317,17 +319,17 @@ a {
 
 .integration-card {
   width: 100%;
-  aspect-ratio: 1 / 1; /* Makes it a perfect square */
+  min-height: 200px; /* Ensures consistent height across browsers */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 1rem;
-  /* padding: 1rem; */
+  padding: 1rem;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   background: #fff;
   transition: transform 0.3s ease;
+  overflow: hidden; /* Prevent content from spilling out */
 }
 
 .hexagon-container {
