@@ -249,21 +249,14 @@ a {
 }
 
 .integration-card {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* Ensures the card maintains a perfect square shape */
-  height: 100%; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
-  padding-top: 1rem; 
-  background: #fff; 
-  border-radius: 12px; 
-  text-align: center; 
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); 
-  transition: transform 0.3s ease; 
+  background: #fff;
+  height: 100%;
+  /* padding: 1.5rem 1rem; */
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
 }
-
 
 .hexagon-wrapper {
   width: 111px;
@@ -311,6 +304,21 @@ a {
     font-size: 0.875rem;
     color: #6b7280;
     line-height: 1.5;
+}
+
+.integration-card {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes it a perfect square */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  /* padding: 1rem; */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background: #fff;
+  transition: transform 0.3s ease;
 }
 
 .hexagon-container {
