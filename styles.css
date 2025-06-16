@@ -484,25 +484,69 @@ a {
         align-items: center;
         text-align: center;
     }
-    .showcase-text, .showcase-visual {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    .showcase-text {
+    order: 1;
+    width: 100%;
+    padding: 0 1rem;
+  }
 
-    .btn-hero-primary,
+  .showcase-subtitle,
+  .showcase-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    color: #111827;
+  }
+
+    .showcase-visual {
+    order: 2;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .showcase-visual img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .showcase-description {
+    order: 3;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6b7280;
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+    .btn-hero-primary{
+       display: block;
+        margin: 1rem auto;
+        text-align: center;
+    }
     .btn-primary {
         display: block;
         margin: 1rem auto;
         text-align: center;
+        order: 4;
+         margin: 0 auto 2rem;
+  
     }
 
     .grid {
         justify-content: center;
         text-align: center;
     }
+    /* Fix for showcase-item reverse layout on mobile */
+    .showcase-item.reverse .showcase-container {
+        flex-direction: column;
+        direction: ltr !important;
+    }
+
+    .showcase-visual img {
+        margin-bottom: 1.5rem;
+    }
 }
+
 
 @media (max-width: 480px) {
     .hero {
