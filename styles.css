@@ -258,6 +258,16 @@ a {
   transition: transform 0.3s ease;
 }
 
+.hexagon-wrapper {
+  width: 111px;
+  height: 111px;
+  margin: 0 auto 1rem;
+
+  /* Apply drop shadow here */
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+
+}
+
 .integration-card .hexagon {
   background-color: #fff;
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
@@ -267,8 +277,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 5px black;
+
+  filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
 }
+
 .integration-icon-card {
     width: 82px;
     height: 82px;
