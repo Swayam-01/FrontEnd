@@ -66,6 +66,7 @@ a {
     margin-left: -1%;
     overflow: hidden;
     transition: all 0.3s ease;
+    transform: translateX(1px);
 }
 
 .btn-hero-primary {
