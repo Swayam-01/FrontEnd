@@ -86,7 +86,7 @@ a {
     background-color: #7b1fa2;
 }
 .btn-primary {
-    background-color: #5324aa;
+    background-color: #6340a3;
     color: #f5f4f8;
     padding: 14px 32px;
     font-size: 0.875rem;
@@ -113,12 +113,11 @@ a {
     width: 12rem;
 }
 .btnn-primary:hover {
-    /* background-color: #7b1fa2;
-    color: #ffffff; */
-    border: rgb(37, 110, 255) 3px solid;
+    background-color: #e0d6e5;
+    /* border: rgb(37, 110, 255) 3px solid; */
 }
 .btn-primary:hover {
-    background-color: #7b1fa2;
+    background-color: #583893;
 }
 .hero-visual img {
     max-width: 100%;
