@@ -440,15 +440,6 @@ a {
 }
 
 /* Responsive Queries */
-@media (min-width: 1920px) {
-  .hero-container,
-  .section-centered-title,
-  .showcase-item,
-  .grid-container {
-    max-width: 1600px;    
-  }
-}
-
 @media (max-width: 1024px) {
     .hero-container,
     .showcase-container {
