@@ -86,7 +86,7 @@ a {
     background-color: #7b1fa2;
 }
 .btn-primary {
-    background-color: #6340a3;
+    background-color: #5f3aa3;
     color: #f5f4f8;
     padding: 14px 32px;
     font-size: 0.875rem;
@@ -435,6 +435,7 @@ a {
 
 .grid-footer {
     text-align: center;
+    margin: 4rem 0;
 }
 
 /* Responsive Queries */
@@ -580,6 +581,38 @@ a {
         gap: 0.5rem;
     }
 }
+
+.additional-info {
+    padding: 1.8rem;
+    background-color: #5f3aa3;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem auto;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+}
+.additional-info .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.additional-info .info-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.additional-info .info-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f5f4f8;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 4rem 0 4rem;
+}
+
 
 /* Testimonials for Mobile section */
 .testimonials-mobile {
