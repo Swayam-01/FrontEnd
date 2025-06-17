@@ -617,6 +617,7 @@ a {
 /* Testimonials for Mobile section */
 .testimonials-mobile {
     display: none;
+    padding: 0rem;
 }
 @media (max-width: 767px) {
     .testimonials-mobile {
