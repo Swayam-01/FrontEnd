@@ -52,6 +52,15 @@ function headerScrollEffect() {
   });
 }
 
+const slides = document.querySelectorAll('input[name="carousel"]');
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].checked = false;
+    current = (current + 1) % slides.length;
+    slides[current].checked = true;
+  }, 5000)
+
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   populateIntegrationGrid();

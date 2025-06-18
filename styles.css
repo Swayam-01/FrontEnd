@@ -481,6 +481,7 @@ a {
         gap: 1rem;
     }
     .header {
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
     .hero {
@@ -737,6 +738,61 @@ a {
     height: 100%;
     border: none;
     border-radius: 10px;
+}
+
+.video-carousel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.video-carousel input[type="radio"] {
+  display: none;
+}
+
+.video-carousel .slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.video-carousel .slide {
+  width: 33.3333%;
+  flex-shrink: 0;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-33.3333%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-66.6667%);
+}
+.video-carousel .dots {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.video-carousel .dots label {
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin: 0 4px;
+  border-radius: 40%;
+  background: #eff1f5;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#slide1:checked ~ .dots label[for="slide1"],
+#slide2:checked ~ .dots label[for="slide2"],
+#slide3:checked ~ .dots label[for="slide3"] {
+  background: #3b45fa;
 }
 
 @media (max-width: 767px) {
